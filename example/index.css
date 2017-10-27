@@ -1,0 +1,31 @@
+.block {
+    width: 200px;
+    border: solid 1px #444;
+    height: 100px;
+    margin: 30px;
+}
+
+#root {
+    height: 500px;
+    width: 265px;
+    overflow: auto;
+    border: solid 1px #444;
+    float:left;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: #BADA55;
+}
+
+#output {
+    float:left;
+    border: solid 1px #444;
+    min-width: 100px;
+    min-height: 100px;
+    margin-left: 30px;
+    padding: 10px;
+}
