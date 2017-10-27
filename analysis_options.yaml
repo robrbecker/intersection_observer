@@ -1,0 +1,168 @@
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+# ALL lint rules are included and the ones not in use are commented
+# out with a reason. An up to date list of all options is here
+# http://dart-lang.github.io/linter/lints/options/options.html
+# Descriptions of each rule is here http://dart-lang.github.io/linter/lints/
+#
+# To ignore a lint rule on a case by case basic in code just add a comment
+# above it like so: // ignore: <linter rule>
+# example: // ignore: invalid_assignment, const_initialized_with_non_constant_value
+#
+# More info about config lint config options is here
+# https://www.dartlang.org/guides/language/analysis-options#excluding-lines-within-a-file
+linter:
+  rules:
+    # Style: Declare method return types.
+    # override with // ignore: always_declare_return_types
+    - always_declare_return_types
+
+    # Style: Specify type annotations.
+    - always_specify_types # really annoying for local vars
+
+    # Style: Annotate overridden members
+    - annotate_overrides
+
+    # Style: Avoid using as.
+    - avoid_as
+
+    # Error: Avoid empty else statements.
+    - avoid_empty_else
+
+    # Style: Don't explicitly initialize variables to null
+    - avoid_init_to_null
+
+    # Style: Avoid return types on setters.
+    - avoid_return_types_on_setters
+
+    # Style: Await only futures.
+    - await_only_futures
+
+    # Style: Name types using UpperCamelCase.
+    - camel_case_types
+
+    # Error: Cancel instances of dart.async.StreamSubscription.
+    - cancel_subscriptions
+
+    # Error: Close instances of dart.core.Sink.
+    - close_sinks
+
+    # Error: Only reference in scope identifiers in doc comments.
+    - comment_references
+
+    # Style: Prefer using lowerCamelCase for constant names.
+    - constant_identifier_names
+
+    # Error: Avoid control flow in finally block.
+    - control_flow_in_finally
+
+    # Style: Avoid empty catch blocks.
+    - empty_catches
+
+    # Style: Use ; instead of {} for empty constructor bodies.
+    - empty_constructor_bodies
+
+    # Error: Avoid empty statements.
+    - empty_statements
+
+    # Error: Always override hashCode if overriding ==
+    - hash_and_equals
+
+    # Style: Don't import implementation files from another package.
+    - implementation_imports
+
+    # Error: Conditions should not unconditionally evaluate to "TRUE" or to "FALSE"
+    - invariant_booleans
+
+    # Error: Invocation of Iterable.contains with references of unrelated types.
+    - iterable_contains_unrelated_type
+
+    # Style: Name libraries and source files using lowercase_with_underscores.
+    - library_names
+
+    # Style: Use lowercase_with_underscores when specifying a library prefix.
+    - library_prefixes
+
+    # Error: Invocation of List.remove with references of unrelated types.
+    - list_remove_unrelated_type
+
+    # Error: Conditions should not unconditionally evaluate to "TRUE" or to "FALSE"
+    - literal_only_boolean_expressions
+
+    # Style: Name non-constant identifiers using lowerCamelCase.
+    - non_constant_identifier_names # UiFactories will lint
+
+    # Style: Avoid defining a one-member abstract class when a simple function will do.
+    - one_member_abstracts
+
+    # Style: Only throw instances of classes extending either Exception or Error
+    - only_throw_errors
+
+    # Style: Do not override fields.
+    - overridden_fields
+
+    # Style: Provide doc comments for all public APIs
+    - package_api_docs
+
+    # Pub: Use lowercase_with_underscores for package names.
+    - package_names
+
+    # Style: Prefix library names with the package name and a dot-separated path.
+    - package_prefixed_library_names
+
+    # Style: Don't reassign references to parameters of functions or methods.
+    - parameter_assignments
+
+    # Style: Private field could be final.
+    - prefer_final_fields
+
+    # Style: Prefer final for variable declaration if reference is not reassigned.
+    # - prefer_final_locals # Noisy, people use var a lot
+
+    # Style: Use isNotEmpty for Iterables and Maps.
+    - prefer_is_not_empty
+
+    # Style: Document all public members
+    - public_member_api_docs
+
+    # Style: Prefer to use /// for doc comments
+    - slash_for_doc_comments
+
+    # Style: Sort constructor declarations before method declarations.
+    - sort_constructors_first
+
+    # Style: Sort unnamed constructor declarations first
+    - sort_unnamed_constructors_first
+
+    # Style: Place the super() call last in a constructor initialization list.
+    - super_goes_last
+
+    # Error: Test type arguments in operator ==(Object other).
+    - test_types_in_equals
+
+    # Error: Avoid throw in finally block.
+    - throw_in_finally
+
+    # Style: Type annotate public APIs.
+    - type_annotate_public_apis # render can return either ReactElement or false
+
+    # Style: Don't type annotate initializing formals.
+    - type_init_formals
+
+    # Style: Await for future expression statements inside async function bodies.
+    - unawaited_futures
+
+    # Style: Avoid using braces in interpolation when not needed.
+    # - unnecessary_brace_in_string_interp # preference
+
+    # Style: Avoid wrapping fields in getters and setters just to be "safe".
+    - unnecessary_getters_setters
+
+    # Error: Equality operator (==) invocation with references of unrelated types.
+    - unrelated_type_equality_checks
+
+    # Error: Use valid regular expression syntax.
+    - valid_regexps
