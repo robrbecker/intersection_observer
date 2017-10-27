@@ -7,9 +7,11 @@ homepage: https://github.com/robrbecker/intersection_observer
 environment:
   sdk: '>=1.22.1 <2.0.0'
 
+dependencies:
+  js: ^0.6.1
+
 dev_dependencies:
   browser: ^0.10.0
-  js: ^0.6.1
 
 transformers:
 - $dart2js:
